@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "canisters": {
+    "vault": {
+      "type": "motoko",
+      "main": "motoko/vault/src/Vault.mo"
+    },
+    "splitter": {
+      "type": "motoko",
+      "main": "motoko/splitter/src/Splitter.mo"
+    },
+    "fallback": {
+      "type": "motoko",
+      "main": "motoko/fallback/src/Fallback.mo"
+    },
+    "governance": {
+      "type": "motoko",
+      "main": "motoko/governance/src/Governance.mo"
+    },
+    "frontend": {
+      "type": "assets",
+      "source": ["frontend/out/"],
+      "dependencies": ["vault", "splitter", "fallback", "governance"]
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  }
+}
