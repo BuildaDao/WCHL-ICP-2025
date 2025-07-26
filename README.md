@@ -1,4 +1,4 @@
-# BAD_DAO - Milestone Vault Engine
+# BAD_DAO - Vault Engine
 
 A comprehensive decentralized milestone vault system built on the Internet Computer Protocol (ICP) using Motoko for backend canisters and Next.js 14+ with TypeScript for the frontend.
 
